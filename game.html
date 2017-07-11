@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PokeFights</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif|Patua+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+	<div id="background">
+	<div class="container">
+	
+		<div class="row">
+			<div class="page-header">
+			  <h1>Pokemon Wars!</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="blue">
+			<h2>Rules of Engagement : </h2>
+			<ul>
+				<li>Select a pokemon of your choice</li>
+				<li>Beat the  rest!</li>
+				<li>Player attack power increases with every attack but will reset everytime an opponent is beat</li>
+				<li>Good Luck young trainer!</li>
+			</ul>
+			</div>
+		</div>
+
+		<div class="row" >
+			<div id="playerheader">
+				<div class="playerchoice" id="charmander">
+					<img src="assets/images/charmander.gif" class="pokemon" name="charmander">
+				</div>
+
+				<div class="playerchoice" id="bulbasaur">
+					<img src="assets/images/bulbasaur.gif" class="pokemon" name="bulbasaur">
+				</div>
+
+				<div class="playerchoice" id="chespin">
+					<img src="assets/images/chespin.gif" class="pokemon" name="chespin">
+				</div>
+
+				<div class="playerchoice" id="pikachu">
+					<img src="assets/images/pikachu.gif" class="pokemon" name="pikachu">
+				</div>
+
+			</div>
+		</div>
+		<div class="row">
+			<button  id="resetGame">
+				Reset Game
+			</button>
+		</div>
+		<div class="row" id="winloss"></div>
+		<div class="row" id="battleground">
+
+			<div class="col-md-6" class="col-sm-6" class="col-xs-6">
+
+				<div class="row">
+					<div id="player">
+						<img class="pokeimages" id="playerImage" src="#" >
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="datadiv">
+						<div class="col-md-10">
+							<div class="progress">
+							  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;" id="playerhealth">
+							    100%
+							  </div>
+							</div>
+						</div>
+						<div class="col-md-6" class="col-sm-6" class="col-xs-6">
+<!-- 							<div id="playerlevel">Wins : 0 | Losses : 0</div> -->
+						</div>
+					</div>
+				</div>	
+
+				<div class="row">
+					<div class="statsleft" id="wins">
+						Wins : 0
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="statsleft" id="playerAttackpower">
+						Attack Power : 
+					</div>
+				</div>
+
+
+				<div class="row">
+					<button id="attack" class=" centerbutton red">
+					Attack!
+					</button>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div id="computer">
+						<img class="pokeimages" id="computerImage" src="#">
+					</div>
+				</div>
+
+				<div class="row">
+				<div class="datadiv">
+					<div class="col-md-10">
+						<div class="progress">
+						  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;" id="computerhealth">
+						    Health : 100%
+						  </div>
+						</div>
+					</div>
+				</div>
+
+<!-- 				<div class="row">
+					<div class="statsright">
+						Wins : 
+					</div>
+				</div> -->
+
+				<div class="row">
+					<div class="statsright" id="compAttackpower">
+						Attack Power!! : 
+					</div>
+				</div>
+
+			</div>
+		</div>
+		</div>
+	</div>
+	</div>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

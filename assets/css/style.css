@@ -1,0 +1,204 @@
+.pokeimages {
+	right: 50px;
+	width:320px;
+	height: 320px;
+	position: relative;
+
+}
+
+.centerbutton{
+	position: relative;
+    background-color: #80ffcc;
+    left: 50px;
+	width: 300px;
+	margin: 0 auto;
+	height:35px;
+	text-align:center;
+	color:#aaff80;
+	text-decoration:none;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	border: thin red solid;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+
+
+.red {
+    text-shadow:-1px -1px 0 #A84155;
+    background: #D25068;
+    border:1px solid #D25068;
+    background-image:linear-gradient(to bottom, #F66C7B, #D25068);
+    border-radius:5px;
+	box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
+}
+
+
+.red:hover {
+    background: #F66C7B;
+    background-image:linear-gradient(top, #D25068, #F66C7B);
+}
+
+.blue {
+	padding-left: 10px;
+    background: #99ff99;
+
+    border:2px solid #00ffff;
+    border-radius:5px;
+	box-shadow: 8px 8px 10px #606060;
+}
+
+h1 {
+	text-align: center;
+	font-size: 45px;
+	font-family: 'Patua One', cursive;
+
+}
+
+h2 {
+	text-align: left;
+	font-size: 25px;
+	font-family: 'Patua One', cursive;
+}
+.statsleft {
+	position: relative;
+	background-color: #80bfff;
+	width: 400px;
+	height: 25px;
+
+	font-size: 15px;
+	vertical-align: middle;
+	font-weight: bolder;
+	font-family: 'PT Serif', serif, bold;
+
+	text-align: left;
+	color: black;
+	display: inline-block;
+	margin: 5px 5px 5px 5px;
+	border: thin solid blue;
+	padding: 5px 5px 5px 5px;
+	border-radius: 4px;
+
+	left: 10px;
+	top: -15px;
+}
+
+.statsright {
+	position: relative;
+	background-color: #80bfff;
+	width: 400px;
+	height: 25px;
+
+	font-size: 15px;
+	vertical-align: left;
+	font-weight: bolder;
+	font-family: 'PT Serif', serif, bold;
+
+	text-align: left;
+	color: black;
+	display: inline-block;
+	margin: 5px 5px 5px 5px;
+	border: thin solid blue;
+	padding: 5px 5px 5px 5px;
+	border-radius: 4px;
+
+	left: 25px;
+	top: -15px;
+}
+
+
+#background {
+	background-image: url(../images/background.png);
+	width: 100%;
+	height: 100%;
+}
+#player {
+	text-align: center;
+}
+
+#computer {
+	text-align: center;
+}
+
+.datadiv {
+	text-align: center;
+}
+
+.playerchoice {
+	display: inline-block;
+	margin: 10px 10px 10px 10px;
+	padding: 10px 30px 10px 10px;
+}
+
+#playerheader {
+	text-align: center;
+}
+
+#battleground {
+
+	top: 500px;
+	visibility: hidden;
+}
+
+#winloss{
+	text-align: center;
+	font-size: 30px;
+}
+#resetGame {
+	visibility: hidden;
+	text-align:center;
+	position: relative;
+    background-color: #80ffcc;
+    left: 400px;
+	width: 300px;
+	margin: 0 auto;
+	height:35px;
+	color:#aaff80;
+	text-decoration:none;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	border: thin red solid;
+	font-weight: bolder;
+	font-size: 20px;
+	text-shadow:-1px -1px 0 #A84155;
+    background: #D25068;
+    border:1px solid #D25068;
+    background-image:linear-gradient(to bottom, #F66C7B, #D25068);
+    border-radius:5px;
+	box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
+
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.pokemon {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.pokemon:hover,
+.pokemon:focus,
+.pokemon:active {
+    transform: scale(1.5);
+}
+
+
