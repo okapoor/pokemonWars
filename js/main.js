@@ -30,7 +30,7 @@
 	var pokeObject = {
 		names: ["charmander", "bulbasaur", "chespin", "pikachu"],
 		imagePaths: ["assets/images/charmander.gif","assets/images/bulbasaur.gif","assets/images/chespin.gif","assets/images/pikachu.gif"],
-		attackPower: ["2", "55", "40", "55"],
+		attackPower: ["12", "15", "13", "18"],
 		// attackPower: ["2", "15", "20", "25"],		
 	}
 	var playerSelected = false;
