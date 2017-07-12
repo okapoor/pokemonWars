@@ -30,7 +30,7 @@
 	var pokeObject = {
 		names: ["charmander", "bulbasaur", "chespin", "pikachu"],
 		imagePaths: ["assets/images/charmander.gif","assets/images/bulbasaur.gif","assets/images/chespin.gif","assets/images/pikachu.gif"],
-		attackPower: ["12", "15", "13", "18"],
+		attackPower: ["12", "14", "13", "18"],
 		// attackPower: ["2", "15", "20", "25"],		
 	}
 	var playerSelected = false;
@@ -67,7 +67,7 @@
 		playerHealth= $("#playerhealth");
 		computerImage = $("#computerImage");
 
-		compLevelUp=Math.floor(Math.random() * 3);
+		compLevelUp=Math.ceil(Math.random() * 8);
 		console.log("Opponent level up is " + opponentLevelUp);
 		compDamage = pokeObject.attackPower[pokeObject.names.indexOf(computerPlayer)];
 		var totalDamage = parseInt(compDamage) + parseInt(compLevelUp)
@@ -151,12 +151,14 @@
 
 		if (wins===3) {
 			$("#winloss").html(
-				" You Won!! Congratulations! "
+				" You Won! Congratulations! "
 			)
+			$("#winloss").css("visibility","visible");
 		} else {
 			$("#winloss").html(
-				" You Lost!! Its Ok! "
-			)		
+				" You Lost! Its Ok! "
+			)	
+			$("#winloss").css("visibility","visible");	
 		}
 
 
@@ -208,6 +210,7 @@
 		$(computerHealth).css("width", "100" + "%");
 		$(computerHealth).attr("aria-valuenow", "100")
 		$(computerHealth).html("100" + "%");
+		$("#winloss").css("visibility","hidden");
 		$("#resetGame").css("visibility","hidden");
 		$("#playerheader").css("visibility","visibile");
 		for (var i = 0 ; i < pokeObject.names.length;i++) {
